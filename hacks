@@ -62,26 +62,9 @@ local Window = Rayfield:CreateWindow({
     Callback = function(Value)
      game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
     end,
- }
+ })
 
- Tab:AddToggle({
-	Name = "Aimbot",
-	Default = false,
-	Callback = function(_G.Aimbot = true;
-        _G.Config = {
-            ['Method'] = "Mouse", -- Mouse / Nearest
-            ['Fov'] = 350,
-            ['Circle'] = true,
-            ['Max Distantce'] = 5000,
-            ['Walk On Water'] = true,
-            ['Semi Mink'] = true
-        };
-        )
-		print(Value)
-	end    
-})
-
-Tab:AddButton({
+ Tab:AddButton({
 	Name = "AIMBOT 2",
 	Callback = function(_G.Aimbot = true;
         _G.Config = {
@@ -95,4 +78,3 @@ Tab:AddButton({
       		print("button pressed")
   	end    
 })
-
